@@ -1,1 +1,2 @@
 # landing.
+Establecer una presencia digital sólida para la Finca María Narcisa, mediante la creación de una página web profesional que permita mostrar sus productos de alta calidad, reflejar su compromiso con prácticas responsables y facilitar el contacto directo con compradores o distribuidores interesados. Esta iniciativa busca posicionar a la finca como un proveedor formal y confiable, ampliando sus oportunidades de negocio más allá de su red local.
