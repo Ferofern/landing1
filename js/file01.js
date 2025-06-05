@@ -1,5 +1,6 @@
 "use strict";
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
 /**
  * Shows an interactive toast notification by adding the 'md:block' class.
  * @function
