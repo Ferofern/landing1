@@ -1,106 +1,275 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Vite App</title>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700"
+    />
+
+    <title>Finca Maria Narciza</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/workspaces/landing./src/botones.js" defer></script>
+
   </head>
-<body>
-
-
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
-   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-     </a>
-     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-         <span class="sr-only">Open main menu</span>
-         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-         </svg>
-     </button>
-     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-       <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-         <li>
-           <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-         </li>
-         <li>
-           <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-         </li>
-         <li>
-           <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-         </li>
-         <li>
-           <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-         </li>
-         <li>
-           <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-         </li>
-       </ul>
-     </div>
-   </div>
- </nav>
- 
-   <main class="bg-slate-50 dark:bg-gray-900">
-      <div id="container-01" class="mx-auto px-4 py-20 text-center">
-         <h1 class ="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">Tu presencia digital comienza aquí</h1>
-         <p class="mt-6 text-lg leading-relaxed text-gray-600 max-w-2xl mx-auto">Creamos experiencias web atractivas y rápidas con Tailwind CSS 4.1. Dale vida a tus ideas con un diseño moderno y responsivo.</p>
-         <div id="container-02">
-            <button id="start" class="inline-block px-6 py-3 text-white bg-blue-600 rounded-lg">Comenzar</button>
-            <button id="demo" class="inline-block px-6 py-3 border border-gray-300 text-gray-700 rounded-lg">Ver demo</button>
-         </div>
-      </div>
-      
-   </main>
-
-   <section class="bg-white dark:bg-gray-900">
-      <div id="container-03" class="px-4 py-8 mx-auto max-w-2xl mx:max-w-xl">
-          <div id="container-04" class="grid grid-cols-2 gap-4 md:grid-cols-4">
-              <img src="https://placehold.co/50" alt="Imagen 1" class="w-full h-auto rounded">
-              <img src="https://placehold.co/50" alt="Imagen 2" class="w-full h-auto rounded">
-              <img src="https://placehold.co/50" alt="Imagen 3" class="w-full h-auto rounded">
-              <img src="https://placehold.co/50" alt="Imagen 4" class="w-full h-auto rounded">
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#122118] dark group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#264532] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none"  xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Finca Maria Narciza</h2>
           </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">Nosotros</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Productos</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Sostenibilidad</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Contactanos</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#38e07b] text-[#122118] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Agenda una Cita</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: url("src/Imagenes/gif1.gif");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      DEL CAMPO A SU MESA CON AMOR Y DEDICACION
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      En Finca Maria Narciza nos importa la calidad de nuestros productos. Nuestras certificaciones organicas y de comercio justo son una muestra clara de nuestro compromiso con la excelencia y la sostenibilidad.
+                    </h2>
+                  </div>
+                  <div class="flex-wrap gap-3 flex">
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#38e07b] text-[#122118] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                    >
+                      <span class="truncate">Da un recorrido</span>
+                    </button>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#264532] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                    >
+                      <span class="truncate">Contactanos</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  Por que seleccionar Finca Maria Narciza?
+                </h1>
+                <p class="text-white text-base font-normal leading-normal max-w-[720px]">Estamos dedicados a proporcionar a nuestros clientes los mejores productos y servicios.</p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#366348] bg-[#1b3124] p-4 flex-col">
+                  <div class="text-white" data-icon="Leaf" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M223.45,40.07a8,8,0,0,0-7.52-7.52C139.8,28.08,78.82,51,52.82,94a87.09,87.09,0,0,0-12.76,49c.57,15.92,5.21,32,13.79,47.85l-19.51,19.5a8,8,0,0,0,11.32,11.32l19.5-19.51C81,210.73,97.09,215.37,113,215.94q1.67.06,3.33.06A86.93,86.93,0,0,0,162,203.18C205,177.18,227.93,116.21,223.45,40.07ZM153.75,189.5c-22.75,13.78-49.68,14-76.71.77l88.63-88.62a8,8,0,0,0-11.32-11.32L65.73,179c-13.19-27-13-54,.77-76.71,22.09-36.47,74.6-56.44,141.31-54.06C210.2,114.89,190.22,167.41,153.75,189.5Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Desarrollo Sostenible</h2>
+                    <p class="text-[#96c5a9] text-sm font-normal leading-normal">
+                      Nuestras practicas agricolas priorizan la responsabilidad ambiental, asegurando la salud a largo plazo de nuestra tierra y la calidad de nuestros productos.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#366348] bg-[#1b3124] p-4 flex-col">
+                  <div class="text-white" data-icon="Truck" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.42,117l-14-35A15.93,15.93,0,0,0,218.58,72H184V64a8,8,0,0,0-8-8H24A16,16,0,0,0,8,72V184a16,16,0,0,0,16,16H41a32,32,0,0,0,62,0h50a32,32,0,0,0,62,0h17a16,16,0,0,0,16-16V120A7.94,7.94,0,0,0,247.42,117ZM184,88h34.58l9.6,24H184ZM24,72H168v64H24ZM72,208a16,16,0,1,1,16-16A16,16,0,0,1,72,208Zm81-24H103a32,32,0,0,0-62,0H24V152H168v12.31A32.11,32.11,0,0,0,153,184Zm31,24a16,16,0,1,1,16-16A16,16,0,0,1,184,208Zm48-24H215a32.06,32.06,0,0,0-31-24V128h48Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Entrega confiable</h2>
+                    <p class="text-[#96c5a9] text-sm font-normal leading-normal">
+Garantizamos la entrega oportuna y eficiente de sus pedidos, manteniendo la frescura y calidad de nuestros productos desde nuestra finca hasta su puerta.                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#366348] bg-[#1b3124] p-4 flex-col">
+                  <div class="text-white" data-icon="Money" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,88a40,40,0,1,0,40,40A40,40,0,0,0,128,88Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,152ZM240,56H16a8,8,0,0,0-8,8V192a8,8,0,0,0,8,8H240a8,8,0,0,0,8-8V64A8,8,0,0,0,240,56ZM193.65,184H62.35A56.78,56.78,0,0,0,24,145.65v-35.3A56.78,56.78,0,0,0,62.35,72h131.3A56.78,56.78,0,0,0,232,110.35v35.3A56.78,56.78,0,0,0,193.65,184ZM232,93.37A40.81,40.81,0,0,1,210.63,72H232ZM45.37,72A40.81,40.81,0,0,1,24,93.37V72ZM24,162.63A40.81,40.81,0,0,1,45.37,184H24ZM210.63,184A40.81,40.81,0,0,1,232,162.63V184Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Precios Competitivos</h2>
+                    <p class="text-[#96c5a9] text-sm font-normal leading-normal">
+                      Ofrecemos estructuras de precios competitivos adaptadas a compradores al por mayor, asegurando que reciba el mejor valor por su inversion.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Nuestros Productos</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("/workspaces/landing./src/Imagenes/Banana1.jpg");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Premium Bananas</p>
+                  <p class="text-[#96c5a9] text-sm font-normal leading-normal">
+                    Nuestro producto estrella, bananas de la mejor calidad, cuenta con certificaciones organicas de los mas altos estandares.  
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("src/Imagenes/diseno_23.png");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Cerveza</p>
+                  <p class="text-[#96c5a9] text-sm font-normal leading-normal">
+                    Nuestra cosecha mas selecta es cuidadosamente procesada y aniejada siguiendo una formula familiar, dando como resultado la cerveza de banana mas refrescante.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("/workspaces/landing./src/Imagenes/ImagenCafe.jpeg");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Bayas de Cafe</p>
+                  <p class="text-[#96c5a9] text-sm font-normal leading-normal">
+                    Nuestras bayas de cafe son cultivadas en las laderas de la finca, ofreciendo un sabor unico y una experiencia de cafe inigualable. Perfecto para los amantes del cafe.
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("/workspaces/landing./src/Imagenes/4.jpg");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Jalea de Banana</p>
+                  <p class="text-[#96c5a9] text-sm font-normal leading-normal">Una jalea saludable elaborada con las mas dulces bananas, perfecta para disfrutar en cualquier momento del dia.</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Libres de Explotacion</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Nos enorgullece contribuir a los sueños de nuestros colaboradores. Nuestros mas altos estandares solo son posibles gracias a una politica centrada en el bienestar y la felicidad de quienes forman parte de nuestra familia, cumpliendo con las normas de CLAC Fairtrade y del Ministerio del Trabajo del Ecuador.
+            </p>
+                  <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("/workspaces/landing./src/Imagenes/crew.jpeg");'
+                ></div>
+               <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">
+  Nuestra Finca Patrimonio de mi Familia
+</h2>
+
+<div class="flex justify-center items-center gap-4 px-4 pb-6">
+  <button id="prevBtn" class="bg-green-700 text-white px-3 py-1 rounded">Anterior</button>
+
+  <img id="carouselImage" src="/src/Imagenes/imagen1.jpeg" alt="Imagen 1" class="w-auto h-auto rounded-md object-cover" />
+
+  <button id="nextBtn" class="bg-green-700 text-white px-3 py-1 rounded">Siguiente</button>
+</div>
+
+ 
+          </div>
+        
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">About</a>
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Products</a>
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Sustainability</a>
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              </div>
+              <p class="text-[#96c5a9] text-base font-normal leading-normal">2024 Finca Maria Narciza. Todos los derechos reservados.</p>
+            </footer>
+      
+          </div>
+        </footer>
+      
       </div>
-  </section>
-  <div id="toast-interactive"
-         class="hidden fixed right-5 bottom-5 flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow-sm dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800"
-         role="alert">
-         <div class="flex">
+    </div>
+<a href="#" id="toastBtn" 
+  style="
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+  "
+  title="Fundadores"
+>
+  <div 
+    style="
+      background-color: #047857; 
+      color: white; 
+      font-size: 12px; 
+      font-weight: 700; 
+      border-radius: 6px; 
+      padding: 4px 10px; 
+      margin-bottom: 6px;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+      display: inline-block;
+    "
+  >
+    FUNDADORES
+  </div>
+  <img src="src/Imagenes/Fundadores-Photoroom.png" alt="Fundadores" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 3px solid greenyellow;" />
+</a>
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">
+  Ubicación
+</h2>
 
-             <!-- Content -->
-             <div class="ms-3 text-sm font-normal">
-                 <span class="mb-1 text-sm font-semibold text-gray-900 dark:text-white">Suscríbete ahora</span>
-                 <div class="mb-2">Suscríbete ahora para obtener beneficios de cliente premium y pro.</div>
-                 <div class="grid grid-cols-2 gap-2">
-                 <div>
-                     <a href="#"
-                     class="inline-flex justify-center w-full px-2 py-1.5 text-xs font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800">Sí, quiero</a>
-                 </div>
-                 <div>
-                     <a href="#"
-                     class="inline-flex justify-center w-full px-2 py-1.5 text-xs font-medium text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-600 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">No ahora</a>
-                 </div>
-                 </div>
-             </div>
+<div class="flex justify-center px-4 pb-6">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.641746807374!2d-79.88701929497931!3d-3.3313005341041686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x903313004683a81f%3A0xa3955435c46dfe53!2sFinca%20Mar%C3%ADa%20Narcisa!5e1!3m2!1ses-419!2sec!4v1749455158013!5m2!1ses-419!2sec"
+    width="400"
+    height="300"
+    style="border:0; max-width: 100%;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
 
-             <!-- Close button -->
-             <button type="button"
-                 class="ms-auto -mx-1.5 -my-1.5 p-1.5 inline-flex items-center justify-center w-8 h-8 text-gray-400 bg-white rounded-lg hover:text-gray-900 hover:bg-gray-100 focus:ring-2 focus:ring-gray-300 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700"
-                 data-dismiss-target="#toast-interactive" aria-label="Close">
-                 <span class="sr-only">Close</span>
-                 <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" aria-hidden="true">
-                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                     d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                 </svg>
-             </button>
-         </div>
-     </div>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-  <script type="module" src="./js/file01.js "></script>
-</body>
+  </body>
+  
 </html>
