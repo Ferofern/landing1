@@ -1,6 +1,7 @@
 "use strict";
 
 import { fetchFakerData } from "./functions.js";
+import { saveVote, getVotes } from "./firebase.js";
 
 
 /**
@@ -132,10 +133,91 @@ const cargarMensajes = async () => {
     }
 };
 
+const displayVotes = async () => {
+    const results = document.getElementById('results');
+    
+    try {
+        const response = await getVotes();
+        
+        if (response.success) {
+            const votes = response.data;
+            const voteCounts = {};
+            
+            // Count votes for each product
+            Object.values(votes).forEach(vote => {
+                voteCounts[vote.productID] = (voteCounts[vote.productID] || 0) + 1;
+            });
+            
+            // Create table HTML
+            const tableHTML = `
+                <table class="w-full text-white">
+                    <thead>
+                        <tr>
+                            <th class="border-b border-[#366348] py-2">Producto</th>
+                            <th class="border-b border-[#366348] py-2">Total Votos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${Object.entries(voteCounts).map(([product, count]) => `
+                            <tr>
+                                <td class="border-b border-[#366348] py-2 text-center">${product}</td>
+                                <td class="border-b border-[#366348] py-2 text-center">${count}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+            
+            results.innerHTML = tableHTML;
+        } else {
+            results.innerHTML = '<p class="text-red-500 text-center">Error al cargar los votos</p>';
+        }
+    } catch (error) {
+        results.innerHTML = `<p class="text-red-500 text-center">${error.message}</p>`;
+    }
+};
+
+const enableForm = () => {
+    const form = document.getElementById('form_voting');
+    const select = document.getElementById('select_product');
+    const results = document.getElementById('results');
+
+    // Enable form elements
+    if (select) {
+        select.disabled = false;
+    }
+    
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const productId = select.value;
+            if (!productId) {
+                results.innerHTML = '<p class="text-red-500 text-center">Por favor seleccione un producto</p>';
+                return;
+            }
+
+            try {
+                const response = await saveVote(productId);
+                if (response.success) {
+                    await displayVotes(); // Show updated votes after saving
+                } else {
+                    results.innerHTML = `<p class="text-red-500 text-center">${response.message}</p>`;
+                }
+                form.reset();
+            } catch (error) {
+                results.innerHTML = `<p class="text-red-500 text-center">${error.message}</p>`;
+            }
+        });
+    }
+};
+
 (() => {
     showToast();
     showVideo();
     loadData();
+    enableForm();
+    displayVotes(); // Show votes on page load
 })();
 
 document.addEventListener('DOMContentLoaded', () => {
