@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
   <head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=devide-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link
       rel="stylesheet"
@@ -8,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700"
     />
 
-    <title>Finca Maria Narciza</title>
+    <title>Finca María Narciza</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -28,10 +31,10 @@
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-white text-sm font-medium leading-normal" href="#">Nosotros</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Productos</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Sostenibilidad</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Contactanos</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#nosotros">Nosotros</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#productos">Productos</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#sostenibilidad">Sostenibilidad</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#contacto">Contáctanos</a>
             </div>
             <button
               class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#38e07b] text-[#122118] text-sm font-bold leading-normal tracking-[0.015em]"
@@ -52,10 +55,10 @@
                     <h1
                       class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                     >
-                      DEL CAMPO A SU MESA CON AMOR Y DEDICACION
+                      DEL CAMPO A SU MESA CON AMOR Y DEDICACIÓN
                     </h1>
                     <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      En Finca Maria Narciza nos importa la calidad de nuestros productos. Nuestras certificaciones organicas y de comercio justo son una muestra clara de nuestro compromiso con la excelencia y la sostenibilidad.
+                      En Finca María Narciza nos importa la calidad de nuestros productos. Nuestras certificaciones orgánicas y de comercio justo son una muestra clara de nuestro compromiso con la excelencia y la sostenibilidad.
                     </h2>
                   </div>
                   <div class="flex-wrap gap-3 flex">
@@ -64,11 +67,11 @@
                     >
                       <span class="truncate">Da un recorrido</span>
                     </button>
-                    <button
+                    <a href="#contacto"
                       class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#264532] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
                     >
-                      <span class="truncate">Contactanos</span>
-                    </button>
+                      <span class="truncate">Contáctanos</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -78,7 +81,7 @@
                 <h1
                   class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
                 >
-                  Por que seleccionar Finca Maria Narciza?
+                  ¿Por qué seleccionar Finca Maráa Narciza?
                 </h1>
                 <p class="text-white text-base font-normal leading-normal max-w-[720px]">Estamos dedicados a proporcionar a nuestros clientes los mejores productos y servicios.</p>
               </div>
@@ -94,7 +97,7 @@
                   <div class="flex flex-col gap-1">
                     <h2 class="text-white text-base font-bold leading-tight">Desarrollo Sostenible</h2>
                     <p class="text-[#96c5a9] text-sm font-normal leading-normal">
-                      Nuestras practicas agricolas priorizan la responsabilidad ambiental, asegurando la salud a largo plazo de nuestra tierra y la calidad de nuestros productos.
+                      Nuestras prácticas agrícolas priorizan la responsabilidad ambiental, asegurando la salud a largo plazo de nuestra tierra y la calidad de nuestros productos.
                     </p>
                   </div>
                 </div>
@@ -123,13 +126,13 @@ Garantizamos la entrega oportuna y eficiente de sus pedidos, manteniendo la fres
                   <div class="flex flex-col gap-1">
                     <h2 class="text-white text-base font-bold leading-tight">Precios Competitivos</h2>
                     <p class="text-[#96c5a9] text-sm font-normal leading-normal">
-                      Ofrecemos estructuras de precios competitivos adaptadas a compradores al por mayor, asegurando que reciba el mejor valor por su inversion.
+                      Ofrecemos estructuras de precios competitivos adaptadas a compradores al por mayor, asegurando que reciba el mejor valor por su inversión.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Nuestros Productos</h2>
+            <h2 id="productos" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Nuestros Productos</h2>
             <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
               <div class="flex flex-col gap-3 pb-3">
                 <div
@@ -139,7 +142,7 @@ Garantizamos la entrega oportuna y eficiente de sus pedidos, manteniendo la fres
                 <div>
                   <p class="text-white text-base font-medium leading-normal">Premium Bananas</p>
                   <p class="text-[#96c5a9] text-sm font-normal leading-normal">
-                    Nuestro producto estrella, bananas de la mejor calidad, cuenta con certificaciones organicas de los mas altos estandares.  
+                    Nuestro producto estrella, bananas de la mejor calidad, cuenta con certificaciones orgánicas de los mas altos estandares.  
                   </p>
                 </div>
               </div>
@@ -151,7 +154,7 @@ Garantizamos la entrega oportuna y eficiente de sus pedidos, manteniendo la fres
                 <div>
                   <p class="text-white text-base font-medium leading-normal">Cerveza</p>
                   <p class="text-[#96c5a9] text-sm font-normal leading-normal">
-                    Nuestra cosecha mas selecta es cuidadosamente procesada y aniejada siguiendo una formula familiar, dando como resultado la cerveza de banana mas refrescante.
+                    Nuestra cosecha más selecta es cuidadosamente procesada y añejada siguiendo una fórmula familiar, dando como resultado la cerveza de banana más refrescante.
                   </p>
                 </div>
               </div>
@@ -161,9 +164,10 @@ Garantizamos la entrega oportuna y eficiente de sus pedidos, manteniendo la fres
                   style='background-image: url("src/Imagenes/ImagenCafe.jpeg");'
                 ></div>
                 <div>
-                  <p class="text-white text-base font-medium leading-normal">Bayas de Cafe</p>
+                  <p class="text-white text-base font-medium leading-normal">Bayas de Café</p>
                   <p class="text-[#96c5a9] text-sm font-normal leading-normal">
-                    Nuestras bayas de cafe son cultivadas en las laderas de la finca, ofreciendo un sabor unico y una experiencia de cafe inigualable. Perfecto para los amantes del cafe.
+                    Nuestras bayas de café son cultivadas en las laderas de la finca, ofreciendo un sabor único y una experiencia de café inigualable. Perfecto para los amantes del café.
+                  </p>
                 </div>
               </div>
               <div class="flex flex-col gap-3 pb-3">
@@ -173,106 +177,154 @@ Garantizamos la entrega oportuna y eficiente de sus pedidos, manteniendo la fres
                 ></div>
                 <div>
                   <p class="text-white text-base font-medium leading-normal">Jalea de Banana</p>
-                  <p class="text-[#96c5a9] text-sm font-normal leading-normal">Una jalea saludable elaborada con las mas dulces bananas, perfecta para disfrutar en cualquier momento del dia.</p>
+                  <p class="text-[#96c5a9] text-sm font-normal leading-normal">Una jalea saludable elaborada con las mas dulces bananas, perfecta para disfrutar en cualquier momento del día.</p>
                 </div>
               </div>
             </div>
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Libres de Explotacion</h2>
-            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-              Nos enorgullece contribuir a los sueños de nuestros colaboradores. Nuestros mas altos estandares solo son posibles gracias a una politica centrada en el bienestar y la felicidad de quienes forman parte de nuestra familia, cumpliendo con las normas de CLAC Fairtrade y del Ministerio del Trabajo del Ecuador.
-            </p>
-                  <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                  style='background-image: url("/src/Imagenes/crew.jpeg");'
-                ></div>
-               <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">
-<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">
-  Nuestra Finca Patrimonio de mi Familia
-</h2>
-
-<div class="flex justify-center items-center gap-4 px-4 pb-6">
-  <button id="prevBtn" class="bg-green-700 text-white px-3 py-1 rounded">Anterior</button>
-
-  <img id="carouselImage" src="/src/Imagenes/imagen1.jpeg" alt="Imagen 1" class="w-auto h-auto rounded-md object-cover" />
-
-  <button id="nextBtn" class="bg-green-700 text-white px-3 py-1 rounded">Siguiente</button>
-</div>
-
- 
-          </div>
-        
-        </div>
-        <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">About</a>
-                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Products</a>
-                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Sustainability</a>
-                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
-                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
-                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+            <h2 id="sostenibilidad" class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px] px-4">
+              ¿Por qué seleccionar Finca María Narciza?
+            </h2>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <p class="text-white text-base font-normal leading-normal max-w-[720px]">Estamos dedicados a proporcionar a nuestros clientes los mejores productos y servicios.</p>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#366348] bg-[#1b3124] p-4 flex-col">
+                  <div class="text-white" data-icon="Leaf" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M223.45,40.07a8,8,0,0,0-7.52-7.52C139.8,28.08,78.82,51,52.82,94a87.09,87.09,0,0,0-12.76,49c.57,15.92,5.21,32,13.79,47.85l-19.51,19.5a8,8,0,0,0,11.32,11.32l19.5-19.51C81,210.73,97.09,215.37,113,215.94q1.67.06,3.33.06A86.93,86.93,0,0,0,162,203.18C205,177.18,227.93,116.21,223.45,40.07ZM153.75,189.5c-22.75,13.78-49.68,14-76.71.77l88.63-88.62a8,8,0,0,0-11.32-11.32L65.73,179c-13.19-27-13-54,.77-76.71,22.09-36.47,74.6-56.44,141.31-54.06C210.2,114.89,190.22,167.41,153.75,189.5Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Desarrollo Sostenible</h2>
+                    <p class="text-[#96c5a9] text-sm font-normal leading-normal">
+                      Nuestras prácticas agrícolas priorizan la responsabilidad ambiental, asegurando la salud a largo plazo de nuestra tierra y la calidad de nuestros productos.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#366348] bg-[#1b3124] p-4 flex-col">
+                  <div class="text-white" data-icon="Truck" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.42,117l-14-35A15.93,15.93,0,0,0,218.58,72H184V64a8,8,0,0,0-8-8H24A16,16,0,0,0,8,72V184a16,16,0,0,0,16,16H41a32,32,0,0,0,62,0h50a32,32,0,0,0,62,0h17a16,16,0,0,0,16-16V120A7.94,7.94,0,0,0,247.42,117ZM184,88h34.58l9.6,24H184ZM24,72H168v64H24ZM72,208a16,16,0,1,1,16-16A16,16,0,0,1,72,208Zm81-24H103a32,32,0,0,0-62,0H24V152H168v12.31A32.11,32.11,0,0,0,153,184Zm31,24a16,16,0,1,1,16-16A16,16,0,0,1,184,208Zm48-24H215a32.06,32.06,0,0,0-31-24V128h48Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Entrega confiable</h2>
+                    <p class="text-[#96c5a9] text-sm font-normal leading-normal">
+Garantizamos la entrega oportuna y eficiente de sus pedidos, manteniendo la frescura y calidad de nuestros productos desde nuestra finca hasta su puerta.                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#366348] bg-[#1b3124] p-4 flex-col">
+                  <div class="text-white" data-icon="Money" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,88a40,40,0,1,0,40,40A40,40,0,0,0,128,88Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,152ZM240,56H16a8,8,0,0,0-8,8V192a8,8,0,0,0,8,8H240a8,8,0,0,0,8-8V64A8,8,0,0,0,240,56ZM193.65,184H62.35A56.78,56.78,0,0,0,24,145.65v-35.3A56.78,56.78,0,0,0,62.35,72h131.3A56.78,56.78,0,0,0,232,110.35v35.3A56.78,56.78,0,0,0,193.65,184ZM232,93.37A40.81,40.81,0,0,1,210.63,72H232ZM45.37,72A40.81,40.81,0,0,1,24,93.37V72ZM24,162.63A40.81,40.81,0,0,1,45.37,184H24ZM210.63,184A40.81,40.81,0,0,1,232,162.63V184Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Precios Competitivos</h2>
+                    <p class="text-[#96c5a9] text-sm font-normal leading-normal">
+                      Ofrecemos estructuras de precios competitivos adaptadas a compradores al por mayor, asegurando que reciba el mejor valor por su inversión.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <p class="text-[#96c5a9] text-base font-normal leading-normal">2024 Finca Maria Narciza. Todos los derechos reservados.</p>
-            </footer>
-      
-          </div>
-        </footer>
-      
-      </div>
-    </div>
-<a href="#" id="toastBtn" 
-  style="
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    z-index: 9999;
-  "
-  title="Fundadores"
->
-  <div 
-    style="
-      background-color: #047857; 
-      color: white; 
-      font-size: 12px; 
-      font-weight: 700; 
-      border-radius: 6px; 
-      padding: 4px 10px; 
-      margin-bottom: 6px;
-      text-align: center;
-      text-transform: uppercase;
-      white-space: nowrap;
-      display: inline-block;
-    "
-  >
-    FUNDADORES
-  </div>
-  <img src="src/Imagenes/Fundadores-Photoroom.png" alt="Fundadores" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 3px solid greenyellow;" />
-</a>
-<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">
-  Ubicación
-</h2>
+            </div>
 
-<div class="flex justify-center px-4 pb-6">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.641746807374!2d-79.88701929497931!3d-3.3313005341041686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x903313004683a81f%3A0xa3955435c46dfe53!2sFinca%20Mar%C3%ADa%20Narcisa!5e1!3m2!1ses-419!2sec!4v1749455158013!5m2!1ses-419!2sec"
-    width="400"
-    height="300"
-    style="border:0; max-width: 100%;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-  ></iframe>
-</div>
+            <!-- Sección Libres de Explotación -->
+            <section id="nosotros">
+              <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Libres de Explotación</h2>
+              <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+                Nos enorgullece contribuir a los sueños de nuestros colaboradores. Nuestros más altos estándares solo son posibles gracias a una política centrada en el bienestar y la felicidad de quienes forman parte de nuestra familia, cumpliendo con las normas de CLAC Fairtrade y del Ministerio del Trabajo del Ecuador.
+              </p>
+              <div class="px-4 pb-6">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("src/Imagenes/crew.jpeg");'
+                ></div>
+              </div>
+            </section>
 
+            <!-- Sección Nuestra Finca Patrimonio -->
+            <section>
+              <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">
+                Nuestra Finca Patrimonio de mi Familia
+              </h2>
 
-<section class="bg-slate-50 dark:bg-gray-900">
+              <div class="flex justify-center items-center gap-4 px-4 pb-6">
+                <button id="prevBtn" class="bg-green-700 text-white px-3 py-1 rounded">Anterior</button>
+                <img id="carouselImage" src="src/Imagenes/imagen1.jpeg" alt="Imagen 1" class="w-auto h-auto rounded-md object-cover" />
+                <button id="nextBtn" class="bg-green-700 text-white px-3 py-1 rounded">Siguiente</button>
+              </div>
+            </section>
+
+            <!-- Sección del Mapa -->
+            <section class="bg-[#122118] px-4 pb-6">
+              <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center pb-3 pt-5">
+                Ubicación
+              </h2>
+
+              <div class="flex justify-center">
+                <div class="w-full max-w-[800px] rounded-lg overflow-hidden bg-[#1b3124] p-2">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.641746807374!2d-79.88701929497931!3d-3.3313005341041686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x903313004683a81f%3A0xa3955435c46dfe53!2sFinca%20Mar%C3%ADa%20Narcisa!5e1!3m2!1ses-419!2sec!4v1749455158013!5m2!1ses-419!2sec"
+                    width="100%"
+                    height="400"
+                    style="border:0; display:block;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </section>
+
+            <section id="contacto" class="bg-[#1b3124] p-8 rounded-lg mx-4 my-8">
+              <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center mb-6">Contáctanos</h2>
+              
+              <form id="contactForm" class="max-w-md mx-auto space-y-4">
+                <div>
+                  <label for="nombre" class="block text-white mb-2">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" class="w-full p-2 rounded bg-[#264532] text-white border border-[#366348] focus:outline-none focus:border-[#38e07b]" required>
+                </div>
+                
+                <div>
+                  <label for="email" class="block text-white mb-2">Email</label>
+                  <input type="email" id="email" name="email" class="w-full p-2 rounded bg-[#264532] text-white border border-[#366348] focus:outline-none focus:border-[#38e07b]" required>
+                </div>
+                
+                <div>
+                  <label for="tipo" class="block text-white mb-2">Tipo de Consulta</label>
+                  <select id="tipo" name="tipo" class="w-full p-2 rounded bg-[#264532] text-white border border-[#366348] focus:outline-none focus:border-[#38e07b]"></select>
+                    <option value="producto">Información de Productos</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="visita">Agendar Visita</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label for="mensaje" class="block text-white mb-2">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje" rows="4" class="w-full p-2 rounded bg-[#264532] text-white border border-[#366348] focus:outline-none focus:border-[#38e07b]" required></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-[#38e07b] text-[#122118] py-2 px-4 rounded font-bold hover:bg-[#2fc76a] transition-colors">
+                  Enviar Mensaje
+                </button>
+              </form>
+            </section>
+
+            <section class="bg-[#1b3124] p-8 rounded-lg mx-4 mb-8">
+              <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center mb-6">Mensajes Recientes</h2>
+              <div id="mensajesContainer" class="space-y-4">
+                <!-- Los mensajes se cargarán aquí dinámicamente -->
+              </div>
+            </section>
+
+            <section class="bg-[#122118] dark:bg-gray-900">
     <div class="max-w-4xl pt-8 pb-3 mx-auto">
         <div id="skeleton-container" class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
 
@@ -312,9 +364,62 @@ Garantizamos la entrega oportuna y eficiente de sus pedidos, manteniendo la fres
         </div>
     </div>
 </section>
+          </div>
+        </div>
 
-
-
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">About</a>
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Products</a>
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Sustainability</a>
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#96c5a9] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+              </div>
+              <p class="text-[#96c5a9] text-base font-normal leading-normal">2024 Finca Maria Narciza. Todos los derechos reservados.</p>
+            </footer>
+      
+          </div>
+        </footer>
+      </div>
+    </div>
+    <a href="#" id="toastBtn" 
+  style="
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+  "
+  title="Fundadores"
+>
+  <div 
+    style="
+      background-color: #047857; 
+      color: white; 
+      font-size: 12px; 
+      font-weight: 700; 
+      border-radius: 6px; 
+      padding: 4px 10px; 
+      margin-bottom: 6px;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+      display: inline-block;
+    "
+  >
+    FUNDADORES
+  </div>
+  <img src="src/Imagenes/Fundadores-Photoroom.png" alt="Fundadores" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 3px solid greenyellow;" />
+</a>
+    <script src="js/functions.js"></script>
+    <script src="js/carousel.js"></script>
   </body>
-  
 </html>
