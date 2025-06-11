@@ -79,6 +79,59 @@ const showVideo = () => {
     }
 };
 
+const handleSubmit = async (event) => {
+    event.preventDefault();
+    
+    const formData = {
+        nombre: document.getElementById('nombre').value,
+        email: document.getElementById('email').value,
+        tipo: document.getElementById('tipo').value,
+        mensaje: document.getElementById('mensaje').value,
+        fecha: new Date().toISOString()
+    };
+
+    try {
+        const response = await fetch('https://fakerapi.it/api/v2/users?_quantity=1', {
+            method: 'GET' // FakerAPI solo soporta GET
+        });
+
+        if (response.ok) {
+            const fakeData = await response.json();
+            console.log('Mensaje simulado:', {...formData, id: fakeData.data[0].id});
+            alert('Mensaje enviado con éxito');
+            event.target.reset();
+            cargarMensajes();
+        } else {
+            throw new Error('Error al enviar el mensaje');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Error al enviar el mensaje: ' + error.message);
+    }
+};
+
+const cargarMensajes = async () => {
+    try {
+        // Usamos FakerAPI para generar datos falsos de personas y comentarios
+        const response = await fetch('https://fakerapi.it/api/v2/persons?_quantity=5&_locale=es_ES');
+        const personData = await response.json();
+        
+        const container = document.getElementById('mensajesContainer');
+        if (container) {
+            container.innerHTML = personData.data.map(persona => `
+                <div class="bg-[#264532] p-4 rounded-lg mb-4">
+                    <p class="text-white font-bold">${persona.firstname} ${persona.lastname}</p>
+                    <p class="text-[#96c5a9] text-sm">${persona.email}</p>
+                    <p class="text-white mt-2">${persona.website}</p>
+                    <p class="text-[#96c5a9] text-xs mt-2">${new Date(persona.birthday).toLocaleDateString()}</p>
+                </div>
+            `).join('');
+        }
+    } catch (error) {
+        console.error('Error al cargar mensajes:', error);
+    }
+};
+
 (() => {
     showToast();
     showVideo();
@@ -122,5 +175,28 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         skeletonContainer.innerHTML = cards.map(card => createCard(card)).join('');
     }, 2000);
+    
+    const form = document.getElementById('contactForm');
+    if (form) {
+        form.addEventListener('submit', handleSubmit);
+    }
+    
+    cargarMensajes();
+    
+    // Add smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
 });
 
